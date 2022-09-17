@@ -32,7 +32,7 @@ if( isset($_POST["submit"]) ) {
     <?php  endif; ?>
         
     <ul>
-        <form action="" method="post">
+        <form action="admin.php" method="post">
             <li>
                 <label for="username">Username :</label>
                 <input type="text" id="username" name="username">

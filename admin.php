@@ -1,3 +1,10 @@
+<?php
+    if( !isset($_POST["nama"] )) {
+        header("Location: login.php");
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +15,7 @@
 </head>
 <body>
     
-    <h1>Selamat Datang Admin!</h1>
+    <h1>Selamat Datang <?= $_POST["nama"] ?></h1>
 
     <a href="login.php">Logout</a>
 
